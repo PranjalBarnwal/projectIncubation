@@ -1,12 +1,12 @@
-import React from 'react'
-import "./InputField.css"
-const Inputfield = () => {
+import React from "react";
+import "./InputField.css";
+const Inputfield = (props) => {
   return (
-    <div className='input-parent'>
-      <p>name</p>
-      <input type="text" placeholder='enter name' />
+    <div className="input-parent">
+      <p>{props.head}</p>
+      <input type={props.type} placeholder={props.placeholder} />
     </div>
-  )
-}
+  );
+};
 
-export default Inputfield
+export default Inputfield;

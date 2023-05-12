@@ -17,18 +17,20 @@ const App = () => {
       <div className='profile-settings'>
         <p className='profile-setting-head'>Profile Setings</p>
         <div className="name-details">
-        <InputField1/>
-        <InputField1/>
+        <InputField1 head="name" placeholder="enter name" type="text"/>
+        <InputField1 head="Surname" placeholder="surname" type="text"/>
+       
+        
         </div>
-        <InputField/>
-        <InputField/>
-        <InputField/>
-        <InputField/>
-        <InputField/>
-        <InputField/>
+        <InputField head="PhoneNumber" placeholder="enter phone number" type="tel"/>
+        <InputField head="Address" placeholder="enter address" type="text"/>
+        <InputField head="Email" placeholder="enter email id" type="email"/>
+        <InputField head="Education" placeholder="education" type="text"/>
+        <InputField head="Country" placeholder="country" type="text"/>
+        <InputField head="State/Region" placeholder="state" type="text"/>
+        
         <div className="name-details">
-        <InputField1/>
-        <InputField1/>
+   
         </div>
         <button className='save'>Save Profile</button>
       </div>
@@ -37,8 +39,8 @@ const App = () => {
         <p>Edit Experience</p>
         <button className='experience'>Experience</button>
         </div>
-      <InputField/>
-      <InputField/>
+        <InputField1 head="Experience in designing" placeholder="experience" type="text"/>
+        <InputField1 head="Additional Details" placeholder="Additional Details" type="text"/>
       
       </div>
       </form>

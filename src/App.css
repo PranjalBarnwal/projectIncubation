@@ -47,6 +47,7 @@ form {
   display: flex;
 }
 .name-details {
+  margin-top: 1rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -120,5 +121,11 @@ form {
   }
   .additional-info{
     justify-content: center;
+  }
+  .name-details{
+    flex-direction: column;
+  }
+  .profile-settings{
+    border: none;
   }
 }

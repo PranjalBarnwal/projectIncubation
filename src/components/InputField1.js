@@ -1,12 +1,12 @@
 import React from 'react'
 import "./InputField1.css"
-const Inputfield = () => {
+const Inputfield1 = (props) => {
   return (
     <div className='input-parent1'>
-      <p>name</p>
-      <input type="text" placeholder='enter name' />
+      <p>{props.head}</p>
+      <input type={props.type} placeholder={props.placeholder} />
     </div>
   )
 }
 
-export default Inputfield
+export default Inputfield1
