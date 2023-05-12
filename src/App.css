@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap");
+.container-parent {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: #632778;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #ffffff;
+  height: 90%;
+  width: 70%;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  border-radius: 50%;
+}
+
+.profile {
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+
+form {
+  display: flex;
+}
+.name-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.profile-settings {
+  border-left: 1px solid rgb(206, 206, 206);
+  border-right: 1px solid rgb(206, 206, 206);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-setting-head {
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.additional-info{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  
+}
+.additional-info-head {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 12px;
+}
+
+.save {
+ 
+  height: 2rem;
+  padding: 4px;
+  background-color: #632778;
   color: white;
+  margin: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.experience{
+
+  height: 2rem;
+  padding: 4px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.experience:hover{
+  color: white;
+  background-color: #632778;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  form{
+    flex-direction: column;
+  }
+  .profile{
+    padding:2rem ;
+  }
+  .save{
+    margin: 3rem;
+  }
+  .additional-info{
+    justify-content: center;
   }
 }

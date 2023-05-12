@@ -1,0 +1,20 @@
+.input-parent1{
+    padding: 10px;
+}
+
+.input-parent1 p{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    
+}
+.input-parent1 input{
+    height: 2rem;
+    width: 100%;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-parent1 input:focus{
+    outline: 1px solid rgb(105, 105, 105);
+}
